@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Lost and Found System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <h1>College Lost and Found System</h1>
+    <p>Lost something? Found something? Let us help you!</p>
+
+    <hr>
+
+    <h2>Report a Lost or Found Item</h2>
+
+    <form>
+        <label for="itemName">Item Name:</label><br>
+        <input type="text" id="itemName" placeholder="Enter item name" required>
+        <br><br>
+
+        <label for="itemType">Item Type:</label><br>
+        <select id="itemType" required>
+            <option value="">Select type</option>
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+        </select>
+        <br><br>
+
+        <label for="category">Category:</label><br>
+        <input type="text" id="category" placeholder="e.g. Book, ID Card, Bag" required>
+        <br><br>
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" placeholder="Where was it lost or found?" required>
+        <br><br>
+
+        <label for="itemDate">Date:</label><br>
+        <input type="date" id="itemDate" required>
+        <br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" placeholder="Describe the item"></textarea>
+        <br><br>
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+    <hr>
+
+<h2>Reported Lost and Found Items</h2>
+
+<div id="itemsList">
+    <p>Loading items...</p>
+</div>
+
+</body>
+</html>
